@@ -32,7 +32,7 @@ DEF_UNAPPROVED_MSG = (
     f"__HALLO SELAMAT DATANG, SAYA ADALAH BOT YANG MENJAGA ROOM CHAT INI MOHON JANGAN MELAKUKAN SPAM KARNA SAYA OTOMATIS AKAN MEMBLOKIR ANDA, TUNGGU SAMPAI {DEFAULTUSER} MENERIMA PESAN ANDA__\n"
     "┏━━━━━━━━━━━━━━━━━━━\n"
     "┣[• `PESAN OTOMATIS`\n"
-    "┣[• `BY LORD USERBOT`\n"
+    "┣[• `BY The Putra's USERBOT`\n"
     "┗━━━━━━━━━━━━━━━━━━━")
 # =================================================================
 
@@ -91,7 +91,7 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > 5:
                 await event.respond(
-                    "`Anda Telah Di Blokir Karna Melakukan Spam Pesan`\n"
+                    "`Maaf, anda Telah Di BLOCKIR Karna Melakukan Spam Pesan`\n"
                     "`Ke Room Chat Lord ツ`"
                 )
 
@@ -119,7 +119,7 @@ async def permitpm(event):
                         + "](tg://user?id="
                         + str(event.chat_id)
                         + ")"
-                        + " Telah Diblokir Karna Melakukan Spam Ke Room Chat",
+                        + " Maaf, anda telah DI BLOCKIR Karna Melakukan Spam Ke Room Chat",
                     )
 
 
@@ -263,7 +263,7 @@ async def disapprovepm(disapprvpm):
         name0 = str(aname.first_name)
 
     await disapprvpm.edit(
-        f"`Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) `Pesan Anda Telah Ditolak, Mohon Jangan Melakukan Spam Ke Room Chat!`"
+        f"`Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) `Maaf pesan Anda Telah Ditolak, Mohon Jangan Melakukan Spam Ke Room Chat!`"
     )
 
     if BOTLOG:
@@ -357,7 +357,7 @@ async def add_pmsg(cust_msg):
         else:
             return await cust_msg.edit("`Mohon Balas Ke Pesan`")
 
-        await cust_msg.edit("`Pesan Berhasil Disimpan Ke Room Chat`")
+        await cust_msg.edit("`Alhamdulillah pesan Berhasil Disimpan Ke Room Chat`")
 
         if BOTLOG:
             await cust_msg.client.send_message(
